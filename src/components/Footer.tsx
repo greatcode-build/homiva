@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-700 text-center mt-10 text-gray-500 py-4">
-        <p>Copyright ©2026 Great Lucky. All rights reserved.</p>
+        <p>Copyright ©2026 Homiva. All rights reserved.</p>
       </div>
     </footer>
   );
