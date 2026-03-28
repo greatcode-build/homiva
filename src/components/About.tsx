@@ -1,6 +1,12 @@
+import { motion } from "motion/react";
+
 const About = () => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: 200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="flex flex-col items-center justify-center mx-auto container p-14 md:px-20 lg:px-32 w-full overflow-hidden"
       id="About"
     >
@@ -15,8 +21,8 @@ const About = () => {
       </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
         <img
-          src="/images/Homiva2.png"
-          alt=""
+          src="/images/homiva-about.png"
+          alt="about image"
           className="w-full sm:w-1/2 max-w-lg rounded-2xl"
         />
         <div className="flex flex-col items-center md:items-start mt-10 text-gray-600">
@@ -47,7 +53,7 @@ const About = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
